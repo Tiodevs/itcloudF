@@ -9,16 +9,16 @@
     display: flex;
     width: 100%;
     padding: 40px 75px;
-    gap: 20px;
+    gap: 80px;
 
     h1 {
         font-size: 50px;
-        width: 40%;
+        width: 37%;
     }
 
     p {
         font-size: 23px;
-        width: 40%;
+        width: 37%;
     }
 
     .btnheade {
@@ -28,10 +28,13 @@
     }
 
     div {
+        width: fit-content;
         display: flex;
         gap: 10px;
+
         a {
             height: fit-content;
+            width: fit-content;
             padding: 15px 20px;
             color: #000000;
             border: 1px solid #656565;
@@ -40,4 +43,75 @@
             color: #656565;
         }
     }
+}
+
+.services {
+    padding: 80px 75px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cardservices {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 10px;
+
+    h2 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.cta {
+    padding: 150px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    .ctatitle {
+        font-size: 60px;
+        width: 45%;
+        span{
+            color: #3C5ABE;
+        }
+    }
+
+    div {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        p {
+            font-size: 23px;
+        }
+
+        .ctabtn {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            a {
+                background-color: #3C5ABE;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 20px;
+                border-radius: 10px;
+                color: #FFFF;
+                font-weight: 400;
+                width: fit-content;
+            }
+        }
+
+    }
+
 }

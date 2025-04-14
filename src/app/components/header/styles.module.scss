@@ -21,6 +21,7 @@
     align-items: center;
     gap: 16px;
     height: 80px;
+    
 
     svg{
       stroke: #FFFF;
@@ -128,15 +129,3 @@
   }
 }
 
-@media (min-width: 1920px){
-  .headerContainer{
-    padding: 40px 0px !important;
-    align-items: center;
-    justify-content: center;
-
-    .headerContent{
-      max-width: 1420px;
-      padding: 0px;
-    }
-  }
-}
