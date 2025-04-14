@@ -53,7 +53,7 @@ export default function Home() {
                         <p>Implantação dos módulos SAP (SAP ERP, SAP S/4HANA, S/4HANA Cloud Public Edition e S/4HANA Cloud Private Edition) de acordo com a necessidade específica de cada cliente.</p>
                     </div>
                     <div className={styles.cardservices}>
-                    <Image
+                        <Image
                             alt="iconservice1"
                             src={"/iconservice2.png"}
                             width={39}
@@ -65,7 +65,7 @@ export default function Home() {
                         <p>Avaliação e redesenho de processos de negócio com o objetivo de aumentar a eficiência e reduzir custos dos nossos clientes.</p>
                     </div>
                     <div className={styles.cardservices}>
-                    <Image
+                        <Image
                             alt="iconservice1"
                             src={"/iconservice3.png"}
                             width={39}
@@ -77,7 +77,7 @@ export default function Home() {
                         <p>Auxílio na migração de sistemas SAP para soluções em nuvem, como SAP S/4HANA Cloud, visando uma maior flexibilidade e escalabilidade de nossos clientes.</p>
                     </div>
                     <div className={styles.cardservices}>
-                    <Image
+                        <Image
                             alt="iconservice1"
                             src={"/iconservice4.png"}
                             width={39}
@@ -89,7 +89,7 @@ export default function Home() {
                         <p>Consultoria sobre o uso eficiente das licenças SAP e sobre a escolha de soluções que melhor atendam às necessidades da empresa.</p>
                     </div>
                     <div className={styles.cardservices}>
-                    <Image
+                        <Image
                             alt="iconservice1"
                             src={"/iconservice5.png"}
                             width={39}
@@ -101,7 +101,7 @@ export default function Home() {
                         <p>Oferecemos treinamentos para equipes internas sobre o uso do sistema SAP e suas funcionalidades.</p>
                     </div>
                     <div className={styles.cardservices}>
-                    <Image
+                        <Image
                             alt="iconservice1"
                             src={"/iconservice6.png"}
                             width={39}
@@ -119,11 +119,201 @@ export default function Home() {
                     <div>
                         <p>Descubra como a Cloud IT Solutions pode transformar seu negócio—entre em contato e dê o primeiro passo rumo à inovação!</p>
                         <div className={styles.ctabtn}>
-                        <a href="">Entrar em contato</a>
-                        <a href="">Saber mais</a>
+                            <a href="">Entrar em contato</a>
+                            <a href="">Saber mais</a>
                         </div>
                     </div>
                 </div>
+
+                <div className={styles.sobre}>
+                    <Image
+                        alt="Logo Sujeito Pizza"
+                        src={"/capasobrenos.png"}
+                        width={652}
+                        height={551}
+                        priority={true}
+                        quality={100}
+                    />
+                    <div className={styles.sobretext}>
+                        <h2>Sobre Nós</h2>
+                        <p>Na Cloud IT Solutions, somos movidos pela paixão por tecnologia e pela missão de transformar empresas através da inovação. Acreditamos que soluções inteligentes são a chave para o crescimento sustentável e o sucesso em um mundo cada vez mais digital.
+                            <br /><br />
+                            Somos uma provedora especializada em soluções de Tecnologia da Informação, com foco em consultoria SAP e serviços voltados à transformação digital. Com uma equipe altamente qualificada e em constante atualização, oferecemos suporte completo — desde a análise de negócios até a implementação e o acompanhamento contínuo — garantindo que nossos clientes estejam sempre à frente no cenário competitivo.
+                            <br /><br />
+                            Trabalhamos lado a lado com nossos parceiros para entender seus desafios, otimizar processos e desenvolver soluções personalizadas que gerem impacto real. Na Cloud IT Solutions, não entregamos apenas tecnologia: entregamos valor, estratégia e inovação sob medida para cada negócio.</p>
+                    </div>
+                </div>
+
+                <div className={styles.empresas}>
+                    <h2>Empresas que confiaram em nós</h2>
+                    <div className={styles.empresaslogos}>
+                        <Image
+                            alt="Logo Sujeito Pizza"
+                            src={"/logoempresas1.png"}
+                            width={225}
+                            height={225}
+                            priority={true}
+                            quality={100}
+                        />
+                        <Image
+                            alt="Logo Sujeito Pizza"
+                            src={"/logoempresas2.png"}
+                            width={192}
+                            height={143}
+                            priority={true}
+                            quality={100}
+                        />
+                        <Image
+                            alt="Logo Sujeito Pizza"
+                            src={"/logoempresas3.png"}
+                            width={317}
+                            height={154}
+                            priority={true}
+                            quality={100}
+                        />
+                        <Image
+                            alt="Logo Sujeito Pizza"
+                            src={"/logoempresas4.png"}
+                            width={165}
+                            height={134}
+                            priority={true}
+                            quality={100}
+                        />
+                        <Image
+                            alt="Logo Sujeito Pizza"
+                            src={"/logoempresas5.png"}
+                            width={213}
+                            height={104}
+                            priority={true}
+                            quality={100}
+                        />
+                    </div>
+                </div>
+
+
+                <div className={styles.fundadores}>
+                    <div className={styles.fundadorestext}>
+
+                        <h2>Nossos Fundadores</h2>
+                        <p>Liderança que inspira inovação</p>
+
+                    </div>
+
+                    <div className={styles.fundadorescard}>
+                        <div className={styles.person}>
+
+                            <Image
+                                alt="Logo Sujeito Pizza"
+                                src={"/fundador1.png"}
+                                width={226}
+                                height={226}
+                                priority={true}
+                                quality={100}
+                            />
+
+                            <h3>
+                                Christopher Magalhães
+                            </h3>
+
+                            <p>
+                                CEO
+                            </p>
+
+                        </div>
+
+                        <p className={styles.fundadoresdescricao}>
+                            Com uma trajetória sólida no universo da tecnologia e mais de 12 anos de atuação em projetos SAP de alta complexidade, Christopher Magalhães é o fundador e líder estratégico da empresa. Desde o início de sua carreira, sempre esteve à frente da transformação digital de empresas de diferentes segmentos, atuando como uma ponte entre os desafios operacionais e as soluções inteligentes que a tecnologia pode oferecer.
+                            <br /><br />
+
+                            Sua missão como CEO vai além de entregar resultados — ele busca construir parcerias duradouras com seus clientes, propondo soluções que realmente agregam valor ao negócio. Seu estilo de liderança é pautado na escuta ativa, na agilidade e na criação de ambientes colaborativos, onde inovação e eficiência caminham lado a lado.
+                        </p>
+
+                    </div>
+
+                    <div className={styles.fundadorescard}>
+                        <div className={styles.person}>
+
+                            <Image
+                                alt="Logo Sujeito Pizza"
+                                src={"/fundador2.png"}
+                                width={226}
+                                height={226}
+                                priority={true}
+                                quality={100}
+                            />
+
+                            <h3>
+                                Ananda Lemos
+                            </h3>
+
+                            <p>
+                                CFO
+                            </p>
+
+                        </div>
+
+                        <p className={styles.fundadoresdescricao}>
+                            Ananda Lemos traz uma combinação rara de visão analítica e sensibilidade humana para o comando financeiro da empresa. Com uma carreira marcada pela excelência em planejamento estratégico, gestão de custos e construção de processos sustentáveis, ela é responsável por garantir a saúde financeira e o crescimento inteligente da organização.
+                            <br /> <br />
+                            Formada em Economia com especializações em Finanças Corporativas e Governança, Ananda atua de forma transversal, conectando os números à estratégia geral da empresa. Ela acredita que as finanças não devem ser apenas um indicador de desempenho, mas sim um motor de inovação e tomada de decisão consciente.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div className={styles.cta}>
+                    <h1 className={styles.ctatitle}>Você está preparado para o <span>próximo passo?</span></h1>
+                    <div>
+                        <p>Descubra como a Cloud IT Solutions pode transformar seu negócio—entre em contato e dê o primeiro passo rumo à inovação!</p>
+                        <div className={styles.ctabtn}>
+                            <a href="">Começe agora</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <footer className={styles.footer}>
+                    <div className={styles.footercontent}>
+                        <h3>Contato</h3>
+                        <p>Estamos prontos para ajudar seu negócio a alcançar novas alturas! Entre em contato com a Cloud IT Solutions hoje mesmo e saiba como nossas soluções personalizadas podem atender às suas necessidades. Sua jornada rumo à inovação começa aqui!
+                        </p>
+                        <div className={styles.footerlinks}>
+                            <a href="">
+                                <Image
+                                    alt="Logo Sujeito Pizza"
+                                    src={"/iconemail.png"}
+                                    width={24}
+                                    height={24}
+                                    priority={true}
+                                    quality={100}
+                                />
+                                comercial@cloudconsulting.com.br
+                            </a>
+                            <a href="">
+                                <Image
+                                    alt="Logo Sujeito Pizza"
+                                    src={"/iconinstagram.png"}
+                                    width={24}
+                                    height={24}
+                                    priority={true}
+                                    quality={100}
+                                />
+                            </a>
+                            <a href="">
+                                <Image
+                                    alt="Logo Sujeito Pizza"
+                                    src={"/linkedin.png"}
+                                    width={24}
+                                    height={24}
+                                    priority={true}
+                                    quality={100}
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </footer>
+
+
 
             </main >
         </div>

@@ -12,12 +12,12 @@
     gap: 80px;
 
     h1 {
-        font-size: 50px;
+        font-size: 47px;
         width: 37%;
     }
 
     p {
-        font-size: 23px;
+        font-size: 20px;
         width: 37%;
     }
 
@@ -29,6 +29,7 @@
 
     div {
         width: fit-content;
+        min-width: 300px;
         display: flex;
         gap: 10px;
 
@@ -70,7 +71,7 @@
 }
 
 .cta {
-    padding: 150px 75px;
+    padding: 100px 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -79,7 +80,8 @@
     .ctatitle {
         font-size: 60px;
         width: 45%;
-        span{
+
+        span {
             color: #3C5ABE;
         }
     }
@@ -98,6 +100,7 @@
             display: flex;
             flex-direction: row;
             gap: 10px;
+            min-width: 300px;
 
             a {
                 background-color: #3C5ABE;
@@ -114,4 +117,444 @@
 
     }
 
+}
+
+
+.sobre {
+    padding: 100px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    .sobretext {
+        h2 {
+            font-size: 50px;
+            color: #3C5ABE;
+        }
+
+        p {
+            margin-top: 15px;
+            font-size: 23px;
+        }
+    }
+}
+
+.empresas {
+    padding: 150px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 100px;
+
+    h2 {
+        font-size: 45px;
+    }
+
+    .empresaslogos {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 40px;
+
+        img {
+            // display: none;
+            width: fit-content;
+            height: fit-content;
+            max-width: 100%;
+        }
+    }
+}
+
+
+.fundadores {
+    padding: 150px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 30px;
+
+    .fundadorestext {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h2 {
+            font-size: 50px;
+            color: #3C5ABE;
+        }
+
+        p {
+            font-size: 23px;
+            color: #656565;
+        }
+    }
+
+    .fundadorescard {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F2F2F2;
+        padding: 40px;
+        gap: 100px;
+
+        .fundadoresdescricao {
+            color: #656565;
+            font-size: 22px;
+        }
+
+        .person {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            h3 {
+                margin-top: 15px;
+                color: #3C5ABE;
+            }
+        }
+    }
+
+}
+
+
+.footer {
+    margin: 150px 75px 50px 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 100px;
+    border-radius: 50px;
+
+    background-color: #F2F2F2;
+
+    .footercontent {
+        width: 600px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+
+        text-align: center;
+
+
+        h3 {
+            color: #000000;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        p {
+            color: #4D4D4D;
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .footerlinks {
+            display: flex;
+            gap: 10px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                background-color: #000000;
+                padding: 10px;
+                border-radius: 10px;
+                color: #F2F2F2;
+                font-weight: 400;
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .header {
+        gap: 50px;
+
+        h1 {
+            font-size: 40px;
+            width: 37%;
+        }
+
+        p {
+            font-size: 20px;
+            width: 37%;
+        }
+    }
+
+    .sobre {
+    
+        .sobretext {
+            h2 {
+                font-size: 40px;
+                color: #3C5ABE;
+            }
+    
+            p {
+                margin-top: 15px;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 1300px) {
+    .cta {
+        padding: 100px 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    
+        .ctatitle {
+            font-size: 60px;
+            width: 100%;
+    
+            span {
+                color: #3C5ABE;
+            }
+        }
+    
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+    
+            p {
+                font-size: 23px;
+            }
+    
+            .ctabtn {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                min-width: 300px;
+    
+                a {
+                    background-color: #3C5ABE;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 15px 20px;
+                    border-radius: 10px;
+                    color: #FFFF;
+                    font-weight: 400;
+                    width: fit-content;
+                }
+            }
+    
+        }
+    
+    }
+
+    .sobre {
+        flex-direction: column;
+
+        img{
+            max-width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .header {
+        flex-direction: column;
+
+        gap: 50px;
+
+        h1 {
+            font-size: 47px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 20px;
+            width: 100%;
+        }
+    }
+
+    .capa {
+        width: 100%;
+        max-height: 50%;
+        height: 670px;
+        object-fit: cover;
+    }
+
+    .fundadores {     
+
+        .fundadorescard {
+        
+            gap: 50px;
+
+            flex-direction: column;
+    
+            .fundadoresdescricao {
+                font-size: 18px ;
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 570px) {
+    .header {
+        padding: 40px 25px;
+        flex-direction: column;
+
+        gap: 30px;
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+
+    }
+
+    .services {
+        padding: 60px 25px;
+        gap: 50px;
+    }
+
+    .cardservices {
+        display: flex;
+        flex-direction: column;
+        width: 450px;
+        gap: 10px;
+    
+        h2 {
+            font-size: 21px;
+        }
+    
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .cta {
+        padding: 100px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    
+        .ctatitle {
+            font-size: 28px;
+        }
+    
+        div {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+    
+            p {
+                font-size: 17px;
+            }
+    
+            .ctabtn {
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                min-width: 300px;
+            }
+    
+        }
+    
+    }
+
+    .sobre {
+        padding: 60px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+
+        img{
+            display: none;
+        }
+    
+        .sobretext {
+            h2 {
+                font-size: 40px;
+                color: #3C5ABE;
+            }
+    
+            p {
+                margin-top: 15px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .empresas {
+        padding: 100px 25px;
+        
+        gap: 50px;
+    
+        h2 {
+            font-size: 35px;
+        }
+    
+        .empresaslogos {
+
+            justify-content: center;
+            gap: 60px;
+            flex-direction: column;
+    
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .fundadores {
+        padding: 60px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 30px;
+    
+        .fundadorestext {
+            text-align: center;
+            margin-bottom: 50px;
+    
+            h2 {
+                font-size: 50px;
+                color: #3C5ABE;
+            }
+    
+            p {
+                font-size: 23px;
+                color: #656565;
+            }
+        }
+    
+        
+    
+    }
 }
