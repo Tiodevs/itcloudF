@@ -46,34 +46,44 @@ export function Header() {
             <p>Blog</p>
           </Link>
           <Link className={styles.link} href="/en">
-          <Image
-            alt="Logo Sujeito Pizza"
-            src={"/iconen.svg"}
-            width={70}
-            height={70}
-            priority={true}
-            quality={100}
-          />
+            <Image
+              alt="Logo Sujeito Pizza"
+              src={"/iconen.svg"}
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
           </Link>
         </nav>
 
         <nav className={styles.nav}>
-          <Link className={isActive("/") ? styles.active : styles.link} href="/">
+          <Link className={isActive("/") || isActive("/en") ? styles.active : styles.link} href="/">
             <p>Home</p>
           </Link>
 
           <Link className={isActive("/blog") ? styles.active : styles.link} href="/blog">
             <p>Blog</p>
           </Link>
-          <Link className={styles.link} href="/en">
-          <Image
-            alt="Logo Sujeito Pizza"
-            src={"/iconen.svg"}
-            width={70}
-            height={70}
-            priority={true}
-            quality={100}
-          />
+          <Link className={isActive("/en") ? styles.enlink : styles.enlinkdeligado} href="/">
+            <Image
+              alt="Logo Sujeito Pizza"
+              src={"/iconebr.svg"}
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
+          </Link>
+          <Link className={isActive("/") ? styles.brlink : styles.brlinkdeligado} href="/en">
+            <Image
+              alt="Logo Sujeito Pizza"
+              src={"/iconen.svg"}
+              width={70}
+              height={70}
+              priority={true}
+              quality={100}
+            />
           </Link>
         </nav>
 

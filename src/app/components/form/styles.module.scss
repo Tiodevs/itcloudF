@@ -8,6 +8,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         height: 600px;
+        margin-top: 150px;
 
         form {
             display: flex;
@@ -17,7 +18,7 @@
     
             input {
                 width: 100%;
-                background-color: var(--preto2);
+                background-color: #F1F1F1;
                 border: none;
                 padding: 13px 18px;
                 margin-top: 8px;
@@ -26,7 +27,7 @@
     
             textarea {
                 width: 100%;
-                background-color: var(--preto2);
+                background-color: #F1F1F1;
                 border: none;
                 padding: 13px 18px;
                 margin-top: 8px;
@@ -35,8 +36,9 @@
             }
     
             button {
-                background-color: var(--main);
+                background-color: #3C5ABE;
                 border: none;
+                color: #F1F1F1;
                 padding: 18px 30px;
                 border-radius: 100px;
                 font-size: 15px;
@@ -71,10 +73,10 @@
                 p {
                     font-size: 20px;
                     font-weight: normal !important;
-                    color: var(--cinza);
+                    color: #656565;
     
                     span {
-                        border-bottom: 2px solid var(--main);
+                        border-bottom: 2px solid #3C5ABE;
                     }
                 }
     
@@ -110,6 +112,18 @@
 
             .copy{
                 display: none;
+            }
+        }
+    }
+
+    .mensagem{
+        .formcontent{
+            .infoform{
+                .contntinfo{
+                    h1{
+                        font-size: 50px;
+                    }
+                }
             }
         }
     }

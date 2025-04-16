@@ -1,7 +1,7 @@
 'use client'
 
 import styles from "./page.module.scss";
-import { Header } from "./components/header";
+import { Header } from "../components/header";
 import { useRouter } from 'next/navigation';
 
 import Image from 'next/image'
@@ -25,16 +25,16 @@ export default function Home() {
                 />
                 <div className={styles.header}>
                     <h1>
-                        Cloud IT Solutions: Sua Parceira em Transformação Digital
+                        Cloud IT Solutions: Your Partner in Digital Transformation
                     </h1>
 
                     <p>
-                        A Cloud IT Solutions é uma provedora de soluções de Tecnologia da Informação, especializada em consultoria SAP e serviços relacionados à transformação digital.
+                        Cloud IT Solutions is an Information Technology solutions provider specializing in SAP consulting and services related to digital transformation.
                     </p>
 
                     <div>
-                        <a href="#service" className={styles.btnheade}>Saiba mais</a>
-                        <a href="/contact">Entre em contato</a>
+                        <a href="#service" className={styles.btnheade}>Learn more</a>
+                        <a href="/contact">Contact us</a>
                     </div>
 
                 </div>
@@ -49,8 +49,8 @@ export default function Home() {
                             priority={true}
                             quality={100}
                         />
-                        <h2>Implantação de Sistemas SAP</h2>
-                        <p>Implantação dos módulos SAP (SAP ERP, SAP S/4HANA, S/4HANA Cloud Public Edition e S/4HANA Cloud Private Edition) de acordo com a necessidade específica de cada cliente.</p>
+                        <h2>SAP System Deployment</h2>
+                        <p>Implementation of SAP modules (SAP ERP, SAP S/4HANA, S/4HANA Cloud Public Edition, and S/4HANA Cloud Private Edition) tailored to each client's specific needs.</p>
                     </div>
                     <div className={styles.cardservices}>
                         <Image
@@ -61,8 +61,8 @@ export default function Home() {
                             priority={true}
                             quality={100}
                         />
-                        <h2>Consultoria em Melhoria de Processos</h2>
-                        <p>Avaliação e redesenho de processos de negócio com o objetivo de aumentar a eficiência e reduzir custos dos nossos clientes.</p>
+                        <h2>Consulting in Process Improvement</h2>
+                        <p>Assessment and redesign of business processes aimed at increasing efficiency and reducing costs for our clients.</p>
                     </div>
                     <div className={styles.cardservices}>
                         <Image
@@ -73,8 +73,8 @@ export default function Home() {
                             priority={true}
                             quality={100}
                         />
-                        <h2>Migração para soluções em Nuvem</h2>
-                        <p>Auxílio na migração de sistemas SAP para soluções em nuvem, como SAP S/4HANA Cloud, visando uma maior flexibilidade e escalabilidade de nossos clientes.</p>
+                        <h2>Cloud Migration Services </h2>
+                        <p>Support in migrating SAP systems to cloud solutions such as SAP S/4HANA Cloud, aiming to provide greater flexibility and scalability for our clients.</p>
                     </div>
                     <div className={styles.cardservices}>
                         <Image
@@ -85,8 +85,8 @@ export default function Home() {
                             priority={true}
                             quality={100}
                         />
-                        <h2>Otimização de Licenças</h2>
-                        <p>Consultoria sobre o uso eficiente das licenças SAP e sobre a escolha de soluções que melhor atendam às necessidades da empresa.</p>
+                        <h2>License Optimization</h2>
+                        <p>Consulting on the efficient use of SAP licenses and the selection of solutions that best meet the company's needs.</p>
                     </div>
                     <div className={styles.cardservices}>
                         <Image
@@ -97,8 +97,8 @@ export default function Home() {
                             priority={true}
                             quality={100}
                         />
-                        <h2>Treinamento e Capacitação</h2>
-                        <p>Oferecemos treinamentos para equipes internas sobre o uso do sistema SAP e suas funcionalidades.</p>
+                        <h2>Training and Enablement</h2>
+                        <p>We offer training for internal teams on how to use the SAP system and its functionalities.</p>
                     </div>
                     <div className={styles.cardservices}>
                         <Image
@@ -115,12 +115,12 @@ export default function Home() {
                 </div>
 
                 <div className={styles.cta}>
-                    <h1 className={styles.ctatitle}>O que você está esperando <span>para sua tranformação?</span></h1>
+                    <h1 className={styles.ctatitle}>What are you waiting for <span>your transformation?</span></h1>
                     <div>
-                        <p>Descubra como a Cloud IT Solutions pode transformar seu negócio—entre em contato e dê o primeiro passo rumo à inovação!</p>
+                        <p>Discover how Cloud IT Solutions can transform your business—get in touch and take the first step towards innovation!</p>
                         <div className={styles.ctabtn}>
-                            <a href="/contact" className={styles.btnctamain}>Entrar em contato</a>
-                            <a href="#sobre">Saber mais</a>
+                            <a href="/contact" className={styles.btnctamain}>Contact us</a>
+                            <a href="#sobre">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -135,17 +135,13 @@ export default function Home() {
                         quality={100}
                     />
                     <div className={styles.sobretext}>
-                        <h2>Sobre Nós</h2>
-                        <p>Na Cloud IT Solutions, somos movidos pela paixão por tecnologia e pela missão de transformar empresas através da inovação. Acreditamos que soluções inteligentes são a chave para o crescimento sustentável e o sucesso em um mundo cada vez mais digital.
-                            <br /><br />
-                            Somos uma provedora especializada em soluções de Tecnologia da Informação, com foco em consultoria SAP e serviços voltados à transformação digital. Com uma equipe altamente qualificada e em constante atualização, oferecemos suporte completo — desde a análise de negócios até a implementação e o acompanhamento contínuo — garantindo que nossos clientes estejam sempre à frente no cenário competitivo.
-                            <br /><br />
-                            Trabalhamos lado a lado com nossos parceiros para entender seus desafios, otimizar processos e desenvolver soluções personalizadas que gerem impacto real. Na Cloud IT Solutions, não entregamos apenas tecnologia: entregamos valor, estratégia e inovação sob medida para cada negócio.</p>
+                        <h2>About us</h2>
+                        <p>At Cloud IT Solutions, we are driven by a passion for technology and the mission to transform businesses through innovation. We believe that smart solutions are the key to sustainable growth and success in an increasingly digital world. <br /><br /> We are a provider specialized in Information Technology solutions, with a focus on SAP consulting and services aimed at digital transformation. With a highly skilled and continuously updated team, we offer complete support — from business analysis to implementation and ongoing monitoring — ensuring that our clients stay ahead in the competitive landscape. <br /><br /> We work side by side with our partners to understand their challenges, optimize processes, and develop tailored solutions that create real impact. At Cloud IT Solutions, we don’t just deliver technology: we deliver value, strategy, and innovation customized for each business.</p>
                     </div>
                 </div>
 
                 <div className={styles.empresas}>
-                    <h2>Empresas que confiaram em nós</h2>
+                    <h2>Companies that trusted us</h2>
                     <div className={styles.empresaslogos}>
                         <Image
                             alt="Logo Sujeito Pizza"
@@ -194,8 +190,8 @@ export default function Home() {
                 <div className={styles.fundadores}>
                     <div className={styles.fundadorestext}>
 
-                        <h2>Nossos Fundadores</h2>
-                        <p>Liderança que inspira inovação</p>
+                        <h2>Our Founders</h2>
+                        <p>Leadership that Inspires Innovation</p>
 
                     </div>
 
@@ -222,10 +218,10 @@ export default function Home() {
                         </div>
 
                         <p className={styles.fundadoresdescricao}>
-                            Com uma trajetória sólida no universo da tecnologia e mais de 12 anos de atuação em projetos SAP de alta complexidade, Christopher Magalhães é o fundador e líder estratégico da empresa. Desde o início de sua carreira, sempre esteve à frente da transformação digital de empresas de diferentes segmentos, atuando como uma ponte entre os desafios operacionais e as soluções inteligentes que a tecnologia pode oferecer.
+                        With a solid track record in the technology field and over 12 years of experience in high-complexity SAP projects, Christopher Magalhães is the founder and strategic leader of the company. From the beginning of his career, he has always been at the forefront of the digital transformation of companies across various sectors, acting as a bridge between operational challenges and the smart solutions technology can offer.
                             <br /><br />
 
-                            Sua missão como CEO vai além de entregar resultados — ele busca construir parcerias duradouras com seus clientes, propondo soluções que realmente agregam valor ao negócio. Seu estilo de liderança é pautado na escuta ativa, na agilidade e na criação de ambientes colaborativos, onde inovação e eficiência caminham lado a lado.
+                            His mission as CEO goes beyond delivering results — he seeks to build long-lasting partnerships with clients, offering solutions that truly add value to their business. His leadership style is based on active listening, agility, and the creation of collaborative environments where innovation and efficiency go hand in hand.
                         </p>
 
                     </div>
@@ -253,20 +249,20 @@ export default function Home() {
                         </div>
 
                         <p className={styles.fundadoresdescricao}>
-                            Ananda Lemos traz uma combinação rara de visão analítica e sensibilidade humana para o comando financeiro da empresa. Com uma carreira marcada pela excelência em planejamento estratégico, gestão de custos e construção de processos sustentáveis, ela é responsável por garantir a saúde financeira e o crescimento inteligente da organização.
+                        Ananda Lemos brings a rare combination of analytical vision and human sensitivity to the company's financial leadership. With a career marked by excellence in strategic planning, cost management, and the development of sustainable processes, she is responsible for ensuring the financial health and intelligent growth of the organization.
                             <br /> <br />
-                            Formada em Economia com especializações em Finanças Corporativas e Governança, Ananda atua de forma transversal, conectando os números à estratégia geral da empresa. Ela acredita que as finanças não devem ser apenas um indicador de desempenho, mas sim um motor de inovação e tomada de decisão consciente.
+                            Graduated in Economics with specializations in Corporate Finance and Governance, Ananda works in a cross-functional manner, connecting numbers to the company's overall strategy. She believes that finance should not only be a performance indicator but also a driver of innovation and conscious decision-making.
                         </p>
 
                     </div>
                 </div>
 
                 <div className={styles.cta2}>
-                    <h1 className={styles.ctatitle}>Você está preparado para o <span>próximo passo?</span></h1>
+                    <h1 className={styles.ctatitle}>Are you ready for the <span>next step?</span></h1>
                     <div>
-                        <p>Descubra como a Cloud IT Solutions pode transformar seu negócio—entre em contato e dê o primeiro passo rumo à inovação!</p>
+                        <p>Discover how Cloud IT Solutions can transform your business—get in touch and take the first step towards innovation!</p>
                         <div className={styles.ctabtn}>
-                            <a href="/contact" className={styles.btnctamain}>Começe agora</a>
+                            <a href="/contact" className={styles.btnctamain}>Start now</a>
                         </div>
                     </div>
                 </div>
@@ -274,8 +270,8 @@ export default function Home() {
 
                 <footer className={styles.footer}>
                     <div className={styles.footercontent}>
-                        <h3>Contato</h3>
-                        <p>Estamos prontos para ajudar seu negócio a alcançar novas alturas! Entre em contato com a Cloud IT Solutions hoje mesmo e saiba como nossas soluções personalizadas podem atender às suas necessidades. Sua jornada rumo à inovação começa aqui!
+                        <h3>Contact</h3>
+                        <p>We are ready to help your business reach new heights! Contact Cloud IT Solutions today and learn how our tailored solutions can meet your needs. Your journey towards innovation starts here!
                         </p>
                         <div className={styles.footerlinks}>
                             <a href="">
@@ -312,6 +308,8 @@ export default function Home() {
                         </div>
                     </div>
                 </footer>
+
+
 
             </main >
         </div>

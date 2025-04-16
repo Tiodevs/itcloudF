@@ -66,6 +66,46 @@
       }
     }
 
+    .enlink{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      img{
+        cursor: pointer;
+      }
+
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+
+    .enlinkdeligado{
+      display: none;
+    }
+
+    .brlink{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px;
+      img{
+        cursor: pointer;
+      }
+
+      &:hover{
+        transform: scale(1.05);
+      }
+    }
+
+    .brlinkdeligado{
+      display: none;
+    }
+
+    
+
     button{
       border:0;
       background: transparent;
