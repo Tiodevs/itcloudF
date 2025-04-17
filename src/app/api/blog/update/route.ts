@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { api } from '../../../services/api';
+import axios from 'axios';
 
 export async function PUT(request: Request) {
   try {
@@ -13,13 +13,22 @@ export async function PUT(request: Request) {
       );
     }
     
-    const response = await api.put("/blog", { id, titulo, texto, Banner });
+    // Usar o axios diretamente com a URL completa do backend
+    const backendUrl = process.env.NEXT_PUBLIC_API || 'https://itcloudapi.vercel.app';
+    const response = await axios.put(`${backendUrl}/blog`, { 
+      id, 
+      titulo, 
+      texto, 
+      Banner 
+    });
     
     return NextResponse.json(response.data);
-  } catch (error) {
+  } catch (error: any) {
     console.error("Erro ao atualizar blog:", error);
+    // Adicionar mais detalhes do erro para depuração
+    const errorMessage = error.response?.data?.error || error.message || 'Erro ao atualizar o blog';
     return NextResponse.json(
-      { error: 'Erro ao atualizar o blog' }, 
+      { error: errorMessage }, 
       { status: 500 }
     );
   }

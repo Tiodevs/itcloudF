@@ -79,7 +79,7 @@ export default function EditarBlog({ params }: { params: { id: string } }) {
     try {
       setIsLoading(true);
       // Usar a nova API route em vez da função de servidor
-      await axios.put('/api/blog/update', {
+      const response = await axios.put('/api/blog/update', {
         id: params.id,
         ...formData
       });
@@ -92,10 +92,25 @@ export default function EditarBlog({ params }: { params: { id: string } }) {
         router.push('/adm/blogs');
       }, 2000);
     } catch (error: any) {
-      const errorMessage = error.response?.data?.error || 'Erro ao atualizar o blog';
+      console.error('Erro ao atualizar o blog:', error);
+      let errorMessage = 'Erro ao atualizar o blog';
+      
+      if (error.response) {
+        // Erro da resposta (status código 4xx, 5xx)
+        errorMessage = error.response.data?.error || 
+                      `Erro ${error.response.status}: ${error.response.statusText}`;
+        console.error('Detalhes da resposta:', error.response.data);
+      } else if (error.request) {
+        // Erro na requisição (sem resposta)
+        errorMessage = 'Erro de conexão com o servidor. Tente novamente mais tarde.';
+        console.error('Detalhes da requisição:', error.request);
+      } else {
+        // Outros erros
+        errorMessage = error.message || errorMessage;
+      }
+      
       setError(errorMessage);
       setSuccess('');
-      console.error('Erro ao atualizar o blog:', error);
     } finally {
       setIsLoading(false);
     }

@@ -35,7 +35,7 @@ export default function NovoBlog() {
     try {
       setIsLoading(true);
       // Usar a nova API route em vez da função de servidor
-      await axios.post('/api/blog/create', formData);
+      const response = await axios.post('/api/blog/create', formData);
       
       setSuccess('Blog criado com sucesso!');
       setError('');
@@ -52,10 +52,25 @@ export default function NovoBlog() {
         router.push('/adm/blogs');
       }, 2000);
     } catch (error: any) {
-      const errorMessage = error.response?.data?.error || 'Erro ao criar o blog';
+      console.error('Erro ao criar o blog:', error);
+      let errorMessage = 'Erro ao criar o blog';
+      
+      if (error.response) {
+        // Erro da resposta (status código 4xx, 5xx)
+        errorMessage = error.response.data?.error || 
+                      `Erro ${error.response.status}: ${error.response.statusText}`;
+        console.error('Detalhes da resposta:', error.response.data);
+      } else if (error.request) {
+        // Erro na requisição (sem resposta)
+        errorMessage = 'Erro de conexão com o servidor. Tente novamente mais tarde.';
+        console.error('Detalhes da requisição:', error.request);
+      } else {
+        // Outros erros
+        errorMessage = error.message || errorMessage;
+      }
+      
       setError(errorMessage);
       setSuccess('');
-      console.error('Erro ao criar o blog:', error);
     } finally {
       setIsLoading(false);
     }

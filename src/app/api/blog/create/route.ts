@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { api } from '../../../services/api';
+import axios from 'axios';
 
 export async function POST(request: Request) {
   try {
@@ -13,13 +13,21 @@ export async function POST(request: Request) {
       );
     }
     
-    const response = await api.post("/blog", { titulo, texto, Banner });
+    // Usar o axios diretamente com a URL completa do backend
+    const backendUrl = process.env.NEXT_PUBLIC_API || 'https://itcloudapi.vercel.app';
+    const response = await axios.post(`${backendUrl}/blog`, { 
+      titulo, 
+      texto, 
+      Banner 
+    });
     
     return NextResponse.json(response.data, { status: 201 });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Erro ao criar blog:", error);
+    // Adicionar mais detalhes do erro para depuração
+    const errorMessage = error.response?.data?.error || error.message || 'Erro ao criar o blog';
     return NextResponse.json(
-      { error: 'Erro ao criar o blog' }, 
+      { error: errorMessage }, 
       { status: 500 }
     );
   }
