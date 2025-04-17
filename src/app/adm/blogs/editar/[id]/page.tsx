@@ -2,8 +2,9 @@
 
 import styles from "./page.module.scss";
 import { useEffect, useState } from "react";
-import { getBlogById, updateBlog } from "../../../../actions/serverActions";
 import { useRouter } from 'next/navigation';
+import axios from "axios";
+import { handleBlogs } from "../../../../actions/serverActions"; // Mantemos esta função apenas para buscar dados
 
 interface BlogData {
   id: string;
@@ -29,7 +30,19 @@ export default function EditarBlog({ params }: { params: { id: string } }) {
     async function loadBlog() {
       try {
         setIsLoading(true);
-        const blogData = await getBlogById(params.id);
+        // Ainda podemos usar handleBlogs para obter os dados
+        const response = await handleBlogs();
+        
+        if (!response.blog || !Array.isArray(response.blog)) {
+          throw new Error("Falha ao buscar blogs");
+        }
+        
+        const blogData = response.blog.find((b: any) => b.id === params.id);
+        
+        if (!blogData) {
+          throw new Error("Blog não encontrado");
+        }
+        
         setBlog(blogData);
         setFormData({
           titulo: blogData.titulo,
@@ -65,10 +78,12 @@ export default function EditarBlog({ params }: { params: { id: string } }) {
 
     try {
       setIsLoading(true);
-      await updateBlog({
+      // Usar a nova API route em vez da função de servidor
+      await axios.put('/api/blog/update', {
         id: params.id,
         ...formData
       });
+      
       setSuccess('Blog atualizado com sucesso!');
       setError('');
       
@@ -77,7 +92,8 @@ export default function EditarBlog({ params }: { params: { id: string } }) {
         router.push('/adm/blogs');
       }, 2000);
     } catch (error: any) {
-      setError(error.message || 'Erro ao atualizar o blog');
+      const errorMessage = error.response?.data?.error || 'Erro ao atualizar o blog';
+      setError(errorMessage);
       setSuccess('');
       console.error('Erro ao atualizar o blog:', error);
     } finally {

@@ -2,8 +2,8 @@
 
 import styles from "./page.module.scss";
 import { useState } from "react";
-import { createBlog } from "../../../actions/serverActions";
 import { useRouter } from 'next/navigation';
+import axios from "axios";
 
 export default function NovoBlog() {
   const router = useRouter();
@@ -34,7 +34,9 @@ export default function NovoBlog() {
 
     try {
       setIsLoading(true);
-      await createBlog(formData);
+      // Usar a nova API route em vez da função de servidor
+      await axios.post('/api/blog/create', formData);
+      
       setSuccess('Blog criado com sucesso!');
       setError('');
       
@@ -50,7 +52,8 @@ export default function NovoBlog() {
         router.push('/adm/blogs');
       }, 2000);
     } catch (error: any) {
-      setError(error.message || 'Erro ao criar o blog');
+      const errorMessage = error.response?.data?.error || 'Erro ao criar o blog';
+      setError(errorMessage);
       setSuccess('');
       console.error('Erro ao criar o blog:', error);
     } finally {
