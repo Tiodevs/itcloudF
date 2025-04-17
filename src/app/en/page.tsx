@@ -136,7 +136,7 @@ export default function Home() {
                     />
                     <div className={styles.sobretext}>
                         <h2>About us</h2>
-                        <p>At Cloud IT Solutions, we are driven by a passion for technology and the mission to transform businesses through innovation. We believe that smart solutions are the key to sustainable growth and success in an increasingly digital world. <br /><br /> We are a provider specialized in Information Technology solutions, with a focus on SAP consulting and services aimed at digital transformation. With a highly skilled and continuously updated team, we offer complete support — from business analysis to implementation and ongoing monitoring — ensuring that our clients stay ahead in the competitive landscape. <br /><br /> We work side by side with our partners to understand their challenges, optimize processes, and develop tailored solutions that create real impact. At Cloud IT Solutions, we don’t just deliver technology: we deliver value, strategy, and innovation customized for each business.</p>
+                        <p>At Cloud IT Solutions, we are driven by a passion for technology and the mission to transform businesses through innovation. We believe that smart solutions are the key to sustainable growth and success in an increasingly digital world. <br /><br /> We are a provider specialized in Information Technology solutions, with a focus on SAP consulting and services aimed at digital transformation. With a highly skilled and continuously updated team, we offer complete support — from business analysis to implementation and ongoing monitoring — ensuring that our clients stay ahead in the competitive landscape. <br /><br /> We work side by side with our partners to understand their challenges, optimize processes, and develop tailored solutions that create real impact. At Cloud IT Solutions, we don't just deliver technology: we deliver value, strategy, and innovation customized for each business.</p>
                     </div>
                 </div>
 
@@ -274,7 +274,7 @@ export default function Home() {
                         <p>We are ready to help your business reach new heights! Contact Cloud IT Solutions today and learn how our tailored solutions can meet your needs. Your journey towards innovation starts here!
                         </p>
                         <div className={styles.footerlinks}>
-                            <a href="">
+                            <a href="mailto:comercial@cloudconsulting.com.br">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/iconemail.png"}
@@ -285,7 +285,7 @@ export default function Home() {
                                 />
                                 comercial@cloudconsulting.com.br
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/sapeia_/">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/iconinstagram.png"}
@@ -295,7 +295,7 @@ export default function Home() {
                                     quality={100}
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/company/cloud-itsolutions/">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/linkedin.png"}

@@ -278,7 +278,7 @@ export default function Home() {
                         <p>Estamos prontos para ajudar seu negócio a alcançar novas alturas! Entre em contato com a Cloud IT Solutions hoje mesmo e saiba como nossas soluções personalizadas podem atender às suas necessidades. Sua jornada rumo à inovação começa aqui!
                         </p>
                         <div className={styles.footerlinks}>
-                            <a href="">
+                            <a href="mailto:comercial@cloudconsulting.com.br">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/iconemail.png"}
@@ -289,7 +289,7 @@ export default function Home() {
                                 />
                                 comercial@cloudconsulting.com.br
                             </a>
-                            <a href="">
+                            <a href="https://www.instagram.com/sapeia_/">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/iconinstagram.png"}
@@ -299,7 +299,7 @@ export default function Home() {
                                     quality={100}
                                 />
                             </a>
-                            <a href="">
+                            <a href="https://www.linkedin.com/company/cloud-itsolutions/">
                                 <Image
                                     alt="Logo Sujeito Pizza"
                                     src={"/linkedin.png"}
