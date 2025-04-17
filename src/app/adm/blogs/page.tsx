@@ -14,6 +14,8 @@ export default function BlogsAdmin() {
     blogTitle: ''
   });
 
+  console.log("TEste")
+
   useEffect(() => {
     loadBlogs();
   }, []);
